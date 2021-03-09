@@ -1,0 +1,94 @@
+.jobsContainer {
+  background-color: var(--secondary-bg);
+  padding-top:2.6rem;
+}
+
+.jobsContainer h2 {
+  font-size: 3rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.jobList{
+  display: flex; 
+  padding: 2rem 0;
+}
+
+.firstJob {
+  width: 30%;
+  height: 415px;
+  margin: 0 2%;
+  background-image: url('/img/job1.jpg');
+
+  position: relative;
+  cursor: pointer;
+  transition: .5s;
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+.firstJob:hover{
+  box-sizing: border-box;
+}
+
+.cardCover, .cardTitle, .cardDescription{
+  opacity: 0;
+
+  transition: .5s
+}
+
+.firstJob:hover > .cardCover, .cardTitle, .cardDescription{
+  opacity: 1;
+}
+
+.otherJobsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 68%;
+}
+
+.card{
+  width: 46%;
+  height: 200px;
+  position:relative;
+  cursor: pointer;
+  margin-bottom:15px;
+  margin-right:15px;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.card:hover > .cardCover, .cardTitle, .cardDescription{
+  opacity: 1;
+}
+
+
+.cardCover{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  padding-top:1.75rem;
+  background-color:rgba(0,0,0,0.6);
+
+  border:3px solid var(--primary-color)
+}
+
+.cardTitle{
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  transition: .5s;
+  font-weight: bold;
+}
+
+.cardDescription{
+  text-align: center;
+  color:#fff;
+  padding: 1rem;
+  font-size: .9rem
+}

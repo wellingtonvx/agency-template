@@ -1,0 +1,65 @@
+:root {
+  --primary-color:#FF5200;
+  --light-color: #FFF;
+  --dark-color:#181920;
+  --text-color:#8b8E94;
+  --black:#000;
+  --secondary-bg:#E5EAFF;
+  --footer-bg:#1D1D1D
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato'
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+/*Menu Hamburger do Header*/
+.fas .fa-bars{
+  font-size: 2rem;
+  color: red;
+  display: none;
+}
+
+
+/*------------------------*/
+
+
+/*-----------Bg-pag-jobs-------*/
+
+#job2{
+  background-image: url('/img/job2.jpg')
+}
+
+#job3{
+  background-image: url('/img/job3.jpg')
+}
+
+#job4{
+  background-image: url('/img/job4.jpg')
+}
+#job5{
+  background-image: url('/img/job5.jpg')
+}
+
+/*------------------------------*/
+
+
+/*--------Footer---------------*/
+footer{
+  background-color: var(--footer-bg);
+  color:var(--text-color);
+  padding: 2rem 2rem;
+}
+
+/*------------------------------*/

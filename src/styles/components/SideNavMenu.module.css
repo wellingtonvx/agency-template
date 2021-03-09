@@ -1,0 +1,84 @@
+.containerNav.active > .bar {
+  transform: rotate(360deg);
+  background-color: transparent;
+}
+ 
+.hamburgerMenu{
+  height: 4rem;
+  width: 3rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bar{
+  width: 1.9rem;
+  height: 1.5px;
+  border-radius: 2px;
+  background-color: #eee;
+  transition: .5s;
+
+  position: relative;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: #eee;
+  transition: 0.5s;
+}
+
+.bar:before {
+  transform: translateY(-9px);
+}
+
+.bar:after {
+  transform: translateY(9px);
+}
+
+
+.sideNavMenuContainer{
+  position: absolute;
+  width: 30%;
+  right: 0;
+  top: 0;
+
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #eee
+}
+
+
+@keyframes appear{
+  from{
+    opacity: 0;
+    transform: translateY(10px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+
+@keyframes hide{
+  from{
+    opacity: 1;
+    transform: translateY(0)
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(10px)
+  }
+}
